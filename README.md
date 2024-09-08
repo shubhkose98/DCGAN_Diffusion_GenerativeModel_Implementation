@@ -12,6 +12,9 @@ The DCGAN architecture used in this project consists of two core components:
 The final output layer uses the Tanh activation function to generate realistic images.
 #### Discriminator:
 - Distinguishes between real and fake images using convolutional layers, batch normalization, leaky ReLU activations, and a sigmoid output to predict the authenticity of the input.
+#### FID Calculation
+- The Fréchet Inception Distance (FID) is used to evaluate the quality of the generated images.
+- Code is provided to calculate FID by comparing the statistics of real images with generated images.
 
 ### Diffusion Models
 Diffusion models are used for progressive noise application and denoising to generate realistic images over multiple iterations. They focus on modeling the conditional probability distribution of each step.
