@@ -28,6 +28,7 @@ Diffusion models are used for progressive noise application and denoising to gen
 - Training alternates between updating the Discriminator (to maximize its accuracy) and the Generator (to fool the Discriminator).
 - The Discriminator learns to classify real images with a label of 1 and fake images with a label of 0, while the Generator is trained to produce images that will be classified as real.
 - The Binary Cross-Entropy Loss (BCELoss) function is used to measure the performance of both networks.
+- The provided model weights are used to generate images to avoid computational expense.
 
 ## Requirements:
 - Since manually training the diffusion model would have required a level of compute not available currently, the diffusion implementation has been run using pre-existing scripts that emulate an existing pre-trained diffusion model details. These scripts are available in the [DLStudio Library](https://engineering.purdue.edu/kak/distDLS/#109).
